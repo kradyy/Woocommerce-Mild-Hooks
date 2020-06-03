@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Woocommerce Hooks Mild Media
+ * Plugin Name: Woocommerce Hooks
  * Plugin URI: https://mildmedia.se
  * Description: Changes the behavior of WooCommerce 
  * Version: 1.0
- * Author: Chris, Mild Media
+ * Author: Mild Media, Chris
  * Author URI: https://mildmedia.se
  * License: GPL2
  */
@@ -58,7 +58,7 @@ class WCMild {
 	}
 
 	function custom_woocommerce_css() {
-		wp_enqueue_style('custom-woocommerce', plugin_dir_url(__FILE__) . 'custom-woocommerce.css', false, 1);
+		wp_enqueue_style('mm-custom-wc', plugin_dir_url(__FILE__) . 'assets/css/custom-woocommerce.css', false, 1);
 	}
 }
 
