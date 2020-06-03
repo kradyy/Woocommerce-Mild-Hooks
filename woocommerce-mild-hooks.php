@@ -21,7 +21,7 @@ class WCMild {
 		add_filter( 'woocommerce_billing_fields', array($this, 'override_billing_fields') );
 
 		// Set a custom value to checkout fields
-		add_filter( 'woocommerce_checkout_get_value',  array($this, 'modify_checkout_fields', 10, 2) );
+		add_filter( 'woocommerce_checkout_get_value',  array($this, 'modify_checkout_fields'), 10, 2 );
 
 		// Add custom styles to Woocommerce
 		add_action( 'wp_enqueue_scripts', array($this, 'custom_woocommerce_css'), 100 );
