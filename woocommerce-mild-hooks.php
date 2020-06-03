@@ -39,7 +39,7 @@ class WCMild {
 			unset( $fields[$field] );
 		}
 
-		// Send value via POST
+		// Send value via $_POST
 		$_POST['billing_first_name'] = '';
 
 		return $fields;
